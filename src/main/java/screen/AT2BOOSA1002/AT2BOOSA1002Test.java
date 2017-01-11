@@ -75,7 +75,7 @@ class AT2BOOSA1002Test {
         if (!hotel(driver)) {
             return false;
         }
-        //ToDo a partir de aqui no se ha revisado el codigo ni comprobado
+        //ToDo a partir de aqui
         if (!transfers(driver)) {
             return false;
         }

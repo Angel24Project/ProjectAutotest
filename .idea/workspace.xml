@@ -6,17 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e173232a-92e9-486f-8a6b-60ffb01c5841" name="Default" comment="Revision ACCOP0025">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/core/recursiveData/recursiveXPaths.class" afterPath="$PROJECT_DIR$/target/classes/core/recursiveData/recursiveXPaths.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+    <list default="true" id="e173232a-92e9-486f-8a6b-60ffb01c5841" name="Default" comment="Be AT2BOOSA1002 &quot;&quot;&quot;terminada&quot;&quot;&quot;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProjectAutotest_jar/ProjectAutotest.jar" afterPath="$PROJECT_DIR$/out/artifacts/ProjectAutotest_jar/ProjectAutotest.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/core/CommonActions/Functions.class" afterPath="$PROJECT_DIR$/target/classes/core/CommonActions/Functions.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/core/CommonActions/Functions.java" afterPath="$PROJECT_DIR$/src/main/java/core/CommonActions/Functions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/core/recursiveData/recursiveXPaths.java" afterPath="$PROJECT_DIR$/src/main/java/core/recursiveData/recursiveXPaths.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/screen/AT2ACCSU0070/AT2ACCSU0070Sis.java" afterPath="$PROJECT_DIR$/src/main/java/screen/AT2ACCSU0070/AT2ACCSU0070Sis.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/screen/AT2ACCSU0070/AT2ACCSU0070Test.java" afterPath="$PROJECT_DIR$/src/main/java/screen/AT2ACCSU0070/AT2ACCSU0070Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/screen/AT2BOOSA1002/AT2BOOSA1002Data.java" afterPath="$PROJECT_DIR$/src/main/java/screen/AT2BOOSA1002/AT2BOOSA1002Data.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/screen/AT2BOOSA1002/AT2BOOSA1002Locators.java" afterPath="$PROJECT_DIR$/src/main/java/screen/AT2BOOSA1002/AT2BOOSA1002Locators.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/screen/AT2BOOSA1002/AT2BOOSA1002Sis.java" afterPath="$PROJECT_DIR$/src/main/java/screen/AT2BOOSA1002/AT2BOOSA1002Sis.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/screen/AT2BOOSA1002/AT2BOOSA1002Test.java" afterPath="$PROJECT_DIR$/src/main/java/screen/AT2BOOSA1002/AT2BOOSA1002Test.java" />
     </list>
     <list id="617e0ae1-fdc3-4242-b9b1-dce6829be5ac" name="Failed commit: Default" comment="*modificado manager at2actsu0037, correción separación codigo de test y sis&#10;" />
@@ -70,36 +63,36 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/screen/AT2BOOSA1002/AT2BOOSA1002Test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.36897275">
-              <caret line="77" column="73" selection-start-line="77" selection-start-column="73" selection-end-line="77" selection-end-column="73" />
+              <caret line="77" column="31" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#374#398#1" expanded="true" />
-                <element signature="e#35803#35804#0" expanded="true" />
-                <element signature="e#35830#35831#0" expanded="true" />
+                <element signature="e#35761#35762#0" expanded="true" />
+                <element signature="e#35788#35789#0" expanded="true" />
                 <element signature="method#hotel_actions_fixinfo#0;class#AT2BOOSA1002Test#0" expanded="false" />
                 <element signature="method#hotel_actions_supplier#0;class#AT2BOOSA1002Test#0" expanded="false" />
-                <element signature="e#61969#62006#0" expanded="false" />
-                <element signature="e#64674#64706#0" expanded="false" />
-                <element signature="e#68226#68253#0" expanded="false" />
-                <element signature="e#70413#70446#0" expanded="false" />
-                <element signature="e#74220#74283#0" expanded="false" />
+                <element signature="e#61927#61964#0" expanded="false" />
+                <element signature="e#64632#64664#0" expanded="false" />
+                <element signature="e#68184#68211#0" expanded="false" />
+                <element signature="e#70371#70404#0" expanded="false" />
+                <element signature="e#74178#74241#0" expanded="false" />
                 <element signature="method#hotel_actions_audit#0;class#AT2BOOSA1002Test#0" expanded="false" />
                 <element signature="method#query_hotel#0;class#AT2BOOSA1002Test#0" expanded="false" />
-                <element signature="e#91491#91520#0" expanded="false" />
+                <element signature="e#91449#91478#0" expanded="false" />
                 <element signature="n#!!doc;n#header_canco#0;n#AT2BOOSA1002Test#0" expanded="false" />
-                <element signature="e#93511#93546#0" expanded="false" />
-                <element signature="e#99432#99469#0" expanded="false" />
+                <element signature="e#93469#93504#0" expanded="false" />
+                <element signature="e#99390#99427#0" expanded="false" />
                 <element signature="method#header_audit#0;class#AT2BOOSA1002Test#0" expanded="false" />
                 <element signature="method#header_generalremarks#0;class#AT2BOOSA1002Test#0" expanded="false" />
                 <element signature="method#header_generalhistoric#0;class#AT2BOOSA1002Test#0" expanded="false" />
                 <element signature="n#!!doc;n#header_headeroperationhistoric#0;n#AT2BOOSA1002Test#0" expanded="false" />
                 <element signature="method#header_headeroperationhistoric#0;class#AT2BOOSA1002Test#0" expanded="false" />
-                <element signature="e#115259#115297#0" expanded="false" />
-                <element signature="e#126919#126971#0" expanded="false" />
+                <element signature="e#115217#115255#0" expanded="false" />
+                <element signature="e#126877#126929#0" expanded="false" />
                 <element signature="method#header_cancelation#0;class#AT2BOOSA1002Test#0" expanded="false" />
                 <element signature="method#header_booking_cases#0;class#AT2BOOSA1002Test#0" expanded="false" />
-                <element signature="e#134616#134646#0" expanded="false" />
-                <element signature="e#135123#135162#0" expanded="false" />
+                <element signature="e#134574#134604#0" expanded="false" />
+                <element signature="e#135081#135120#0" expanded="false" />
                 <element signature="method#header_collectiondata#0;class#AT2BOOSA1002Test#0" expanded="false" />
                 <element signature="method#header_paxes_creationEdit#0;class#AT2BOOSA1002Test#0" expanded="false" />
                 <element signature="method#header_to_booking#0;class#AT2BOOSA1002Test#0" expanded="false" />
@@ -1086,12 +1079,6 @@
       <option name="number" value="Default" />
       <updated>1454668829543</updated>
     </task>
-    <task id="LOCAL-00064" summary="Actualización código AT2ACCOP0011,">
-      <created>1474619628673</created>
-      <option name="number" value="00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1474619628674</updated>
-    </task>
     <task id="LOCAL-00065" summary="Actualización código AT2ACCOP0020,">
       <created>1474888435238</created>
       <option name="number" value="00065" />
@@ -1380,7 +1367,13 @@
       <option name="project" value="LOCAL" />
       <updated>1483102844419</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="Be AT2BOOSA1002 &quot;&quot;&quot;terminada&quot;&quot;&quot;">
+      <created>1484144291998</created>
+      <option name="number" value="00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1484144292002</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1487,7 +1480,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Actualización código  AT2TRFSU0019," />
     <MESSAGE value="Actualización código  AT2MDMOR0029," />
     <MESSAGE value="Actualización código  AT2BOOSU1004," />
     <MESSAGE value="Actualización código  AT2ACCSU0073,AT2MDMOR0029" />
@@ -1512,7 +1504,8 @@
     <MESSAGE value="Actualización ACCOP0024&#10;Y Subida de primeros cambios de la boosa1002....." />
     <MESSAGE value="1º Actualización de la boosa1002 y el 'dios' de los checkbox" />
     <MESSAGE value="   ACTUALIZACION DE AT2BOOSA1002&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="   ACTUALIZACION DE AT2BOOSA1002&#10;" />
+    <MESSAGE value="Be AT2BOOSA1002 &quot;&quot;&quot;terminada&quot;&quot;&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Be AT2BOOSA1002 &quot;&quot;&quot;terminada&quot;&quot;&quot;" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2198,36 +2191,36 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/screen/AT2BOOSA1002/AT2BOOSA1002Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36897275">
-          <caret line="77" column="73" selection-start-line="77" selection-start-column="73" selection-end-line="77" selection-end-column="73" />
+          <caret line="77" column="31" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#374#398#1" expanded="true" />
-            <element signature="e#35803#35804#0" expanded="true" />
-            <element signature="e#35830#35831#0" expanded="true" />
+            <element signature="e#35761#35762#0" expanded="true" />
+            <element signature="e#35788#35789#0" expanded="true" />
             <element signature="method#hotel_actions_fixinfo#0;class#AT2BOOSA1002Test#0" expanded="false" />
             <element signature="method#hotel_actions_supplier#0;class#AT2BOOSA1002Test#0" expanded="false" />
-            <element signature="e#61969#62006#0" expanded="false" />
-            <element signature="e#64674#64706#0" expanded="false" />
-            <element signature="e#68226#68253#0" expanded="false" />
-            <element signature="e#70413#70446#0" expanded="false" />
-            <element signature="e#74220#74283#0" expanded="false" />
+            <element signature="e#61927#61964#0" expanded="false" />
+            <element signature="e#64632#64664#0" expanded="false" />
+            <element signature="e#68184#68211#0" expanded="false" />
+            <element signature="e#70371#70404#0" expanded="false" />
+            <element signature="e#74178#74241#0" expanded="false" />
             <element signature="method#hotel_actions_audit#0;class#AT2BOOSA1002Test#0" expanded="false" />
             <element signature="method#query_hotel#0;class#AT2BOOSA1002Test#0" expanded="false" />
-            <element signature="e#91491#91520#0" expanded="false" />
+            <element signature="e#91449#91478#0" expanded="false" />
             <element signature="n#!!doc;n#header_canco#0;n#AT2BOOSA1002Test#0" expanded="false" />
-            <element signature="e#93511#93546#0" expanded="false" />
-            <element signature="e#99432#99469#0" expanded="false" />
+            <element signature="e#93469#93504#0" expanded="false" />
+            <element signature="e#99390#99427#0" expanded="false" />
             <element signature="method#header_audit#0;class#AT2BOOSA1002Test#0" expanded="false" />
             <element signature="method#header_generalremarks#0;class#AT2BOOSA1002Test#0" expanded="false" />
             <element signature="method#header_generalhistoric#0;class#AT2BOOSA1002Test#0" expanded="false" />
             <element signature="n#!!doc;n#header_headeroperationhistoric#0;n#AT2BOOSA1002Test#0" expanded="false" />
             <element signature="method#header_headeroperationhistoric#0;class#AT2BOOSA1002Test#0" expanded="false" />
-            <element signature="e#115259#115297#0" expanded="false" />
-            <element signature="e#126919#126971#0" expanded="false" />
+            <element signature="e#115217#115255#0" expanded="false" />
+            <element signature="e#126877#126929#0" expanded="false" />
             <element signature="method#header_cancelation#0;class#AT2BOOSA1002Test#0" expanded="false" />
             <element signature="method#header_booking_cases#0;class#AT2BOOSA1002Test#0" expanded="false" />
-            <element signature="e#134616#134646#0" expanded="false" />
-            <element signature="e#135123#135162#0" expanded="false" />
+            <element signature="e#134574#134604#0" expanded="false" />
+            <element signature="e#135081#135120#0" expanded="false" />
             <element signature="method#header_collectiondata#0;class#AT2BOOSA1002Test#0" expanded="false" />
             <element signature="method#header_paxes_creationEdit#0;class#AT2BOOSA1002Test#0" expanded="false" />
             <element signature="method#header_to_booking#0;class#AT2BOOSA1002Test#0" expanded="false" />
