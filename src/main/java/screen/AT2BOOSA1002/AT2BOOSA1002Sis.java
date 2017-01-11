@@ -5,6 +5,8 @@ import core.CommonActions.DataGenerator;
 import core.CommonActions.Functions;
 import core.TestDriver.TestDriver;
 import core.recursiveData.recursiveXPaths;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 
 /**
  * @author acarrillo on 18/05/2016.
@@ -64,12 +66,12 @@ class AT2BOOSA1002Sis {
         if (!create_header(driver)) {
             return false;
         }
-        if (!header_actions(driver)) {
+        /*if (!header_actions(driver)) {
             return false;
         }
         if (!header_consult(driver)) {
             return false;
-        }
+        }*/
         if (!hotel(driver)) {
             return false;
         }
@@ -1183,6 +1185,8 @@ class AT2BOOSA1002Sis {
     //</editor-fold >
     //<editor-fold desc="Hotel CSED">
     private boolean hotel(TestDriver driver) {
+        Functions.zoomIn(driver);
+        driver.getDriver().findElement(By.tagName("html")).sendKeys(Keys.chord(Keys.PAGE_DOWN));
         if (!create_hotel(driver)) {
             return false;
         }
@@ -1691,40 +1695,58 @@ class AT2BOOSA1002Sis {
                 " on BOOSA1002 Hotel")) {
             return false;
         } // where the operation occurs
-
         if (!Functions.insertInput(driver, new String[]{"hotel_b_query_i_startdate", getElements("hotel_b_query_i_startdate")},
                 "hotel_startdate", getData("hotel_startdate"), " on BOOSA1002 Hotel")) {
             return false;
         }
-
         if (!Functions.insertInput(driver, new String[]{"hotel_b_query_i_night", getElements("hotel_b_query_i_night")},
                 "hotel_night", getData("hotel_night"), " on BOOSA1002 Hotel")) {
             return false;
         }
-
         if (!Functions.insertInput(driver, new String[]{"hotel_b_query_i_hotel", getElements("hotel_b_query_i_hotel")},
                 "hotel_hotel", getData("hotel_hotel"), " on BOOSA1002 Hotel")) {
             return false;
         }
         //contract
         //uni
+        if (!Functions.insertInput(driver, new String[]{"hotel_b_query_i_uni", getElements("hotel_b_query_i_uni")},
+                "hotel_uni", getData("hotel_uni"), " on BOOSA1002 Hotel")) {
+            return false;
+        }
         if (!Functions.insertInput(driver, new String[]{"hotel_b_query_i_room", getElements("hotel_b_query_i_room")},
                 "hotel_room", getData("hotel_room"), " on BOOSA1002 Hotel")) {
             return false;
         }
-
         if (!Functions.insertInput(driver, new String[]{"hotel_b_query_i_char", getElements("hotel_b_query_i_char")},
                 "hotel_char", getData("hotel_char"), " on BOOSA1002 Hotel")) {
             return false;
         }
-
         if (!Functions.insertInput(driver, new String[]{"hotel_b_query_i_board", getElements("hotel_b_query_i_board")},
                 "hotel_board", getData("hotel_board"), " on BOOSA1002 Hotel")) {
             return false;
         }
-
+        if (!Functions.insertInput(driver, new String[]{"hotel_b_query_i_adult", getElements("hotel_b_query_i_adult")},
+                "hotel_adult", getData("hotel_adult"), " on BOOSA1002 Hotel")) {
+            return false;
+        }
+        if (!Functions.insertInput(driver, new String[]{"hotel_b_query_i_child", getElements("hotel_b_query_i_child")},
+                "hotel_child", getData("hotel_child"), " on BOOSA1002 Hotel")) {
+            return false;
+        }
+        if (!Functions.insertInput(driver, new String[]{"hotel_b_query_i_infant", getElements("hotel_b_query_i_infant")},
+                "hotel_infant", getData("hotel_infant"), " on BOOSA1002 Hotel")) {
+            return false;
+        }
+        if (!Functions.insertInput(driver, new String[]{"hotel_b_query_i_prod", getElements("hotel_b_query_i_prod")},
+                "hotel_prod", getData("hotel_prod"), " on BOOSA1002 Hotel")) {
+            return false;
+        }
+        if (!Functions.insertInput(driver, new String[]{"hotel_b_query_i_prod_ofi", getElements("hotel_b_query_i_prod_ofi")},
+                "hotel_prod_ofi", getData("hotel_prod_ofi"), " on BOOSA1002 Hotel")) {
+            return false;
+        }
         if (!Functions.enterQueryAndClickResult(driver,
-                new String[]{"hotel_b_query_i_board", getElements("hotel_b_query_i_board")}, //any query input
+                new String[]{"hotel_b_query_i_prod_ofi", getElements("hotel_b_query_i_prod_ofi")}, //any query input
                 new String[]{"hotel_e_result", getElements("hotel_e_result")}, //table result
                 "where")) {
             return false;
@@ -1733,7 +1755,6 @@ class AT2BOOSA1002Sis {
     }
 
     private boolean create_hotel(TestDriver driver) {
-
         if (!Functions.checkClick(driver,
                 new String[]{"hotel_b_add", getElements("hotel_b_add")}, //element to click
                 new String[]{"hotel_e_result", getElements("hotel_e_result")}, //element expected to appear
@@ -1744,10 +1765,12 @@ class AT2BOOSA1002Sis {
                 "hotel_startdate", getData("hotel_startdate"), " on BOOSA1002 Hotel")) {
             return false;
         }
+        Functions.break_time(driver, 30, 500);
         if (!Functions.insertInput(driver, new String[]{"hotel_e_result_i_night", getElements("hotel_e_result_i_night")},
                 "hotel_night", getData("hotel_night"), " on BOOSA1002 Hotel")) {
             return false;
         }
+        Functions.break_time(driver, 30, 500);
         if (!Functions.createLovByValue(driver,
                 new String[]{"hotel_e_result_lov_hotel", getElements("hotel_e_result_lov_hotel")}, //LoV button
                 new String[]{"hotel_e_result_i_hotel", getElements("hotel_e_result_i_hotel")}, //external LoV input
@@ -1757,32 +1780,102 @@ class AT2BOOSA1002Sis {
                 " on BOOSA1002 Hotel")) {
             return false;
         }
-
-        //contract
-        //uni
-
-        if (!Functions.createLovByValue(driver,
-                new String[]{"hotel_e_result_lov_room", getElements("hotel_e_result_lov_room")}, //LoV button
-                new String[]{"hotel_e_result_i_room", getElements("hotel_e_result_i_room")}, //external LoV input
-                new String[]{"lovinput", recursiveXPaths.lov_i_genericinput}, //internal LoV input
-                getData("room_name"), // value to search
-                "room_name", //name of the data
+        Functions.break_time(driver, 30, 500);
+        if (!Functions.checkClick(driver,
+                new String[]{"hotel_e_result_b_contract", getElements("hotel_e_result_b_contract")}, //element to click
+                recursiveXPaths.glass,//element expected to appear
                 " on BOOSA1002 Hotel")) {
             return false;
         }
-        if (!Functions.createLov(driver,
-                new String[]{"hotel_e_result_lov_char", getElements("hotel_e_result_lov_char")}, //LoV button
-                new String[]{"hotel_e_result_i_char", getElements("hotel_e_result_i_char")}, //external LoV input
-                recursiveXPaths.lov_b_search, // lov b search
-                recursiveXPaths.lov_e_result, // lov result
-                recursiveXPaths.lov_b_ok, //lov b ok
-                "char_name", //name of the data
+        Functions.break_time(driver, 30, 500);
+        if (!Functions.simpleClick(driver,
+                new String[]{"hotel_e_result_b_contract_e_result", getElements("hotel_e_result_b_contract_e_result")},
                 " on BOOSA1002 Hotel")) {
             return false;
         }
+        Functions.break_time(driver, 30, 500);
+        if (!Functions.getText(driver,
+                new String[]{"hotel_e_result_b_contract_e_result_e_hotel", getElements("hotel_e_result_b_contract_e_result_e_hotel")},
+                "hotel_in_contract",
+                " on BOOSA1002 Hotel")) {
+            return false;
+        }
+        Functions.break_time(driver, 30, 500);
+        String[] xpathClick;
+        boolean contract = false;
+        if (getData("hotel_in_contract") != null && !getData("hotel_in_contract").isEmpty()) {
+            xpathClick = new String[]{"hotel_e_result_b_contract_b_book", getElements("hotel_e_result_b_contract_b_book")};
+            contract = true;
+        } else {
+            xpathClick = new String[]{"hotel_e_result_b_contract_b_exit", getElements("hotel_e_result_b_contract_b_exit")};
+        }
+        if (!Functions.checkClickByAbsence(driver,
+                xpathClick, //element to click
+                recursiveXPaths.glass,//element expected to appear
+                " on BOOSA1002 Hotel")) {
+            return false;
+        }
+        Functions.break_time(driver, 30, 500);
+        if (!Functions.insertInput(driver, new String[]{"hotel_e_result_i_uni", getElements("hotel_e_result_i_uni")},
+                "hotel_uni", getData("hotel_uni"), " on BOOSA1002 Hotel")) {
+            return false;
+        }
+        if (!contract) {
+            Functions.break_time(driver, 30, 500);
+            if (!Functions.simpleClick(driver,
+                    new String[]{"hotel_e_result_lov_room", getElements("hotel_e_result_lov_room")}, //element to click
+                    " on BOOSA1002 Hotel")) {
+                return false;
+            }
+            if (!Functions.createLov(driver,
+                    new String[]{"hotel_e_result_lov_room", getElements("hotel_e_result_lov_room")}, //LoV button
+                    new String[]{"hotel_e_result_i_room", getElements("hotel_e_result_i_room")}, //external LoV input
+                    recursiveXPaths.lov_b_search, // lov b search
+                    recursiveXPaths.lov_e_result, // lov result
+                    recursiveXPaths.lov_b_ok, //lov b ok
+                    "room_name", //name of the data
+                    " on BOOSA1002 Hotel")) {
+                return false;
+            }
+            Functions.break_time(driver, 30, 500);
+            if (!Functions.createLov(driver,
+                    new String[]{"hotel_e_result_lov_char", getElements("hotel_e_result_lov_char")}, //LoV button
+                    new String[]{"hotel_e_result_i_char", getElements("hotel_e_result_i_char")}, //external LoV input
+                    recursiveXPaths.lov_b_search, // lov b search
+                    recursiveXPaths.lov_e_result, // lov result
+                    recursiveXPaths.lov_b_ok, //lov b ok
+                    "char_name", //name of the data
+                    " on BOOSA1002 Hotel")) {
+                return false;
+            }
+            Functions.break_time(driver, 30, 500);
+            if (!Functions.simpleClick(driver,
+                    new String[]{"hotel_e_result_lov_board", getElements("hotel_e_result_lov_board")}, //element to click
+                    " on BOOSA1002 Hotel")) {
+                return false;
+            }
+            if (!Functions.createLov(driver,
+                    new String[]{"hotel_e_result_lov_board", getElements("hotel_e_result_lov_board")}, //LoV button
+                    new String[]{"hotel_e_result_i_board", getElements("hotel_e_result_i_board")}, //external LoV input
+                    recursiveXPaths.lov_b_search, // lov b search
+                    recursiveXPaths.lov_e_result, // lov result
+                    recursiveXPaths.lov_b_ok, //lov b ok
+                    "board_name", //name of the data
+                    " on BOOSA1002 Hotel")) {
+                return false;
+            }
+            Functions.break_time(driver, 30, 500);
+        }
+        if (!Functions.navigateTable(driver,
+                new String[]{"hotel_e_scroller", getElements("hotel_e_scroller")}, //scroller xpath
+                "forward",
+                " on BOOSA1002 Hotel")) {
+            return false;
+        }
+        Functions.break_time(driver, 30, 500);
         if (!Functions.createLov(driver,
-                new String[]{"hotel_e_result_lov_board", getElements("hotel_e_result_lov_board")}, //LoV button
-                new String[]{"hotel_e_result_i_board", getElements("hotel_e_result_i_board")}, //external LoV input
+                new String[]{"hotel_e_result_lov_prod_ofi", getElements("hotel_e_result_lov_prod_ofi")}, //LoV button
+                new String[]{"hotel_e_result_i_prod_ofi", getElements("hotel_e_result_i_prod_ofi")}, //external LoV input
                 recursiveXPaths.lov_b_search, // lov b search
                 recursiveXPaths.lov_e_result, // lov result
                 recursiveXPaths.lov_b_ok, //lov b ok
@@ -1790,7 +1883,7 @@ class AT2BOOSA1002Sis {
                 " on BOOSA1002 Hotel")) {
             return false;
         }
-
+        Functions.break_time(driver, 30, 500);
         if (!Functions.simpleClick(driver,
                 new String[]{"hotel_b_save", getElements("hotel_b_save")}, //element to click
                 " on BOOSA1002 Hotel")) {
@@ -2547,12 +2640,13 @@ class AT2BOOSA1002Sis {
                 on + "-> Actions Suppliers Tab")) {
             return false;
         }
-        if (!Functions.checkClickByAbsence(driver,
-                new String[]{"header_b_consult_b_headerhistoric_e_supp_tab_b_action_b_query_sendings", getElements("header_b_consult_b_headerhistoric_e_supp_tab_b_action_b_query_sendings")}, //element to click
-                new String[]{"workingclasshero", "//*[contains(@id, 'si7')]/img"},
-                on + "-> Actions Suppliers Tab")) {
-            return false;
-        }
+        /** No se dde donde salen los registros de esta pestaña asi que no puedo dejar que haga la QBE y pete sin ser bug
+         if (!Functions.checkClickByAbsence(driver,
+         new String[]{"header_b_consult_b_headerhistoric_e_supp_tab_b_action_b_query_sendings", getElements("header_b_consult_b_headerhistoric_e_supp_tab_b_action_b_query_sendings")}, //element to click
+         new String[]{"workingclasshero", "//*[contains(@id, 'si7')]/img"},
+         on + "-> Actions Suppliers Tab")) {
+         return false;
+         }*/
         Functions.break_time(driver, 30, 100);
         Functions.screenshot(driver);
         if (!Functions.checkClickByAbsence(driver,
@@ -2752,7 +2846,7 @@ class AT2BOOSA1002Sis {
             }
         }
         if (!Functions.checkClickByAbsence(driver,
-                new String[]{"header_b_actions_b_paxes_b_close", getElements("header_b_actions_b_paxes_b_close")}, //element to click
+                new String[]{"header_b_actions_b_paxes_b_save", getElements("header_b_actions_b_paxes_b_save")}, //element to click
                 new String[]{"header_b_actions_b_paxes_b_close", getElements("header_b_actions_b_paxes_b_close")},
                 180, 500, on)) {
             return false;
@@ -3244,12 +3338,16 @@ class AT2BOOSA1002Sis {
         Functions.break_time(driver, 60, 500);
         String mystring = getData("booking_value");
         System.out.println(mystring);
-        String bookings_value[] = mystring.split("-");
-        System.out.println(bookings_value);
-        putData("booking", bookings_value[1]);
-        String recep_value[] = bookings_value[0].split(" ");
-        System.out.println(recep_value);
-        putData("receptive", recep_value[2]);
+        try {
+            String bookings_value[] = mystring.split("-");
+            System.out.println(bookings_value);
+            putData("booking", bookings_value[1]);
+            String recep_value[] = bookings_value[0].split(" ");
+            System.out.println(recep_value);
+            putData("receptive", recep_value[2]);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         return true;
     }

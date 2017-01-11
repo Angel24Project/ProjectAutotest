@@ -139,6 +139,7 @@ public class AT2ACCSU0070Test {
                 new String[]{"search_lov_hotel", getElements("search_lov_hotel")},
                 "hotel_code", "472",
                 "hotel_desc", "VINCCI BOSC DE MAR",
+                "hotel",
                 on)) {
             return false;
         }
@@ -146,6 +147,7 @@ public class AT2ACCSU0070Test {
                 new String[]{"search_lov_brand", getElements("search_lov_brand")},
                 "brand_code", "INDEPEND",
                 "brand_desc", "INDEPEND",
+                "brand",
                 on)) {
             return false;
         }
@@ -153,6 +155,7 @@ public class AT2ACCSU0070Test {
                 new String[]{"search_lov_cadena_hotel", getElements("search_lov_cadena_hotel")},
                 "chain_code", "VINCC",
                 "chain_desc", "VINCCI HOTELES",
+                "cadena_hotel",
                 on)) {
             return false;
         }
@@ -160,6 +163,7 @@ public class AT2ACCSU0070Test {
                 new String[]{"search_lov_external_hotel", getElements("search_lov_external_hotel")},
                 "ex_hotel_code", "472",
                 "ex_hotel_desc", "Vincci Bosc de Mar",
+                "external_hotel",
                 on)) {
             return false;
         }
@@ -179,6 +183,7 @@ public class AT2ACCSU0070Test {
                 new String[]{"search_lov_hotel", getElements("search_lov_hotel")},
                 "hotel_code", "1100",
                 "hotel_desc", "ESCORSO",
+                "hotel1",
                 on)) {
             return false;
         }
@@ -198,6 +203,7 @@ public class AT2ACCSU0070Test {
                 new String[]{"search_lov_brand", getElements("search_lov_brand")},
                 "brand_code", "MELHOT",
                 "brand_desc", "Melia Hotels Urbano",
+                "brand1",
                 on)) {
             return false;
         }
@@ -217,6 +223,7 @@ public class AT2ACCSU0070Test {
                 new String[]{"search_lov_cadena_hotel", getElements("search_lov_cadena_hotel")},
                 "chain_code", "CATA",
                 "chain_desc", "CATALONIA HOTELS",
+                "cadena_hotel1",
                 on)) {
             return false;
         }
@@ -236,6 +243,7 @@ public class AT2ACCSU0070Test {
                 new String[]{"search_lov_external_hotel", getElements("search_lov_external_hotel")},
                 "ex_hotel_code", "66512",
                 "ex_hotel_desc", "St Olaves",
+                "external_hotel1",
                 on)) {
             return false;
         }

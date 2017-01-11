@@ -100,7 +100,6 @@ public class AT2BOOSU1004Sis {
 
 
     }
-
     private boolean Delete_supler_hotel_exclusions (TestDriver driver){
 
         driver.getReport().addHeader("DELETE IN SUPLIER HOTEL EXCLUSIONS",3,false);
@@ -115,7 +114,6 @@ public class AT2BOOSU1004Sis {
         }
         return true;
     }
-
     private boolean Other_actions_suplier_hotel_exclusions (TestDriver driver){
 
         driver.getReport().addHeader("OTHER ACTIONS IN SUPLIER HOTEL EXCLUSIONS",3,false);
@@ -139,7 +137,6 @@ public class AT2BOOSU1004Sis {
 
         return true;
     }
-
     private boolean Edit_suplier_hotel_exclusions (TestDriver driver){
 
         String where = " on EDIT IN HOTEL EXCLUSIONS";
@@ -266,7 +263,6 @@ public class AT2BOOSU1004Sis {
 
         return true;
     }
-
     private boolean Search_suplier_hotel_exclusions (TestDriver driver){
 
         String where = " on SEARCH IN HOTEL EXCLUSIONS";
@@ -308,7 +304,6 @@ public class AT2BOOSU1004Sis {
         }
         return true;
     }
-
     private boolean Add_suplier_hotel_exclusions (TestDriver driver){
 
         String where = " on ADD IN SUPLIER HOTEL EXCLUSIONS";
@@ -433,7 +428,6 @@ public class AT2BOOSU1004Sis {
         }
         return true;
     }
-
     private boolean Go_to_suplier_hotel_exclusions (TestDriver driver){
         if(!Functions.checkClick(driver,
                 new String[]{"go_to_suplier_hotel_exclusions",getElements("go_to_suplier_hotel_exclusions")}, //element to click
@@ -444,8 +438,6 @@ public class AT2BOOSU1004Sis {
         }
         return true;
     }
-
-
     private boolean Reconfirmation_clients (TestDriver driver){
 
         if(!Add_cofiguration_by_tto(driver)){
@@ -510,7 +502,6 @@ public class AT2BOOSU1004Sis {
 
         return true;
     }
-
     private boolean Other_actions_configuration_by_clients (TestDriver driver){
         driver.getReport().addHeader(" OTHER ACTIONS IN CONFIGURATION BY CLIENTS",3,false);
         String where = " on EDIT IN CONFIGURATION BY CLIENTS ";
@@ -1023,7 +1014,6 @@ public class AT2BOOSU1004Sis {
         }
         return true;
     }
-
     private boolean Search_configuration_by_clients (TestDriver driver){
         String where = " on SEARCH IN CONFIGURATION BY CLIENTS ";
         driver.getReport().addHeader("SEARCH IN CONFIGURATION BY CLIENTS",3,false);
@@ -1157,7 +1147,6 @@ public class AT2BOOSU1004Sis {
 
         return true;
     }
-
     private boolean Add_configuration_by_clients (TestDriver driver){
 
         String where = " on ADD IN CONFIGURATION BY CLIENTS ";
@@ -1509,7 +1498,6 @@ public class AT2BOOSU1004Sis {
         return true;
 
     }
-
     private boolean Other_actions_configuration_by_tto (TestDriver driver){
 
         String where = " on OTHER ACTIONS IN CONFIGURATION BY TTOO";
@@ -1775,8 +1763,6 @@ public class AT2BOOSU1004Sis {
         }
         return true;
     }
-
-
     private boolean Search_edit_configuration_by_tto(TestDriver driver) {
 
         String where=" on SEARCHQBE IN CONFIGURATION BY TTOO";

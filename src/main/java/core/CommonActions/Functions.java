@@ -1815,14 +1815,16 @@ public class Functions {
      * @param driver      {@code TestDriver} - This TestDriver gathers all the info refferent to the current test
      * @param b_lov       {@code String[]} - Xpath referent to the LoV button, [0] is the data name, [1] is the value
      * @param altreresult {@code boolean} - Switches to select between the first and second record
+     * @param value_qbe   {@code String} - This is the value that will save to search later in he QBE
      * @param where       {@code String} - Tells where the operation is taking effect
      * @return {@code boolean}
      */
-    public static boolean lovMultiSelection(TestDriver driver, String[] b_lov, boolean altreresult,String where) {
+    public static boolean lovMultiSelection(TestDriver driver, String[] b_lov, boolean altreresult, String value_qbe, String where) {
         /*
           if(!Functions.lovMultiSelection(driver,
             new String[]{"", getElements("")},
             false, //like this selects the 1º record
+            "data_name",
             "where")){
                 return false;
             }
@@ -1838,7 +1840,7 @@ public class Functions {
             } else {
                 simpleClick(driver, recursiveXPaths.msilov_e_result, where);
             }
-
+            getText(driver, recursiveXPaths.msilov_e_data, value_qbe, where);
             checkClick(driver, recursiveXPaths.msilov_b_arrow, recursiveXPaths.msilov_e_result_2, 1, 500, where);
             checkClickByAbsence(driver, recursiveXPaths.msilov_b_ok, recursiveXPaths.msilov_b_ok, 2, 500, where);
         } catch (Exception e) {
@@ -1860,17 +1862,19 @@ public class Functions {
      * @param value          {@code String} - This is the code that will be searched into the lov
      * @param data_name_desc {@code String} - Name of the data that will be included in the data map
      * @param value_desc     {@code String} - This is the description that will be searched into the lov
+     * @param value_qbe      {@code String} - This is the value that will save to search later in he QBE
      * @param where          {@code String} - Tells where the operation is taking effect
      * @return {@code boolean}
      */
     public static boolean lovMultiSelectionByValue(TestDriver driver, String[] b_lov, String data_name, String value,
-                                                   String data_name_desc, String value_desc, String where) {
+                                                   String data_name_desc, String value_desc, String value_qbe, String where) {
         driver.getReport().addContent("Lov with Multiselection values:", "h5", "");
         /*
         if (!Functions.lovMultiSelectionByValue(driver,
                 new String[]{"", getElements("")},
                 "dataname_code", "value_code",
-                "dataname_desc", "value_desc", //if you leave this empty it will escape it
+                "dataname_desc", "value_desc", //if you leave both of these empty it will escape them
+                "value_qbe",
                 "where")) {
             return false;
         }
@@ -1884,6 +1888,7 @@ public class Functions {
             checkClick(driver, recursiveXPaths.msilov_b_search, recursiveXPaths.msilov_e_result, 5, 500, where);
             simpleClick(driver, recursiveXPaths.msilov_e_result, where);
             checkClick(driver, recursiveXPaths.msilov_b_arrow, recursiveXPaths.msilov_e_result_2, 1, 500, where);
+            getText(driver, recursiveXPaths.msilov_e_data, value_qbe, where);
             checkClickByAbsence(driver, recursiveXPaths.msilov_b_ok, recursiveXPaths.glass, 2, 500, where);
         } catch (Exception e) {
             String message = "--ERROR: to select values in multiselection lov on" + where;

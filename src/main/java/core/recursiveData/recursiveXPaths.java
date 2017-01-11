@@ -33,6 +33,7 @@ public class recursiveXPaths {
     public static final String[] msilov_e_altresult2 = {"msilov_e_altresult2", "//*[contains(@id, 'dc_t2::db')]/table/tbody/tr[3]/td[1]"};
     public static final String[] msilov_b_ok = {"msilov_b_ok", "//*[contains(@id, 'dc_ctb5')]"};
     public static final String[] msilov_b_arrow = {"msilov_b_arrow", "//*[contains(@id, 'dc_ctb4::icon')]"};
+    public static final String[] msilov_e_data = {"msilov_e_data", "//*[contains(@id, 'msilov') and contains(@id, ':dc_t2::db')]/table/tbody/tr[1]/td[1]"};
     //</editor-fold>
     //<editor-fold desc="DELETE XPATHS">
     //public static final String delete_b_yes = "//*[contains(@id, 'dConfirmDelete::yes')]";

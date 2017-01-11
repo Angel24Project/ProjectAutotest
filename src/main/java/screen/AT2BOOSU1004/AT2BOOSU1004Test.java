@@ -518,8 +518,6 @@ public class AT2BOOSU1004Test {
         }
         return true;
     }
-
-
     private boolean Edit_configuration_by_clients (TestDriver driver){
         driver.getReport().addHeader(" EDIT IN CONFIGURATION ",3,false);
         String where = " on EDIT IN CONFIGURATION BY CLIENTS ";
