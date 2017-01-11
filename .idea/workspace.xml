@@ -9,13 +9,11 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/screen/AT2ACCSU1002/AT2ACCSU1002Sis.java" line="318" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e173232a-92e9-486f-8a6b-60ffb01c5841" name="Default" comment="Actualización código">
+    <list default="true" id="e173232a-92e9-486f-8a6b-60ffb01c5841" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProjectAutotest_jar/ProjectAutotest.jar" afterPath="$PROJECT_DIR$/out/artifacts/ProjectAutotest_jar/ProjectAutotest.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/core/CommonActions/Functions.class" afterPath="$PROJECT_DIR$/target/classes/core/CommonActions/Functions.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/core/recursiveData/recursiveXPaths.class" afterPath="$PROJECT_DIR$/target/classes/core/recursiveData/recursiveXPaths.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/screen/AT2BOOSA0001/AT2BOOSA0001Test.java" afterPath="$PROJECT_DIR$/src/main/java/screen/AT2BOOSA0001/AT2BOOSA0001Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/screen/AT2BOOSU1004/AT2BOOSU1004Locators.java" afterPath="$PROJECT_DIR$/src/main/java/screen/AT2BOOSU1004/AT2BOOSU1004Locators.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/screen/AT2BOOSU1004/AT2BOOSU1004Sis.java" afterPath="$PROJECT_DIR$/src/main/java/screen/AT2BOOSU1004/AT2BOOSU1004Sis.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/screen/AT2BOOSU1004/AT2BOOSU1004Test.java" afterPath="$PROJECT_DIR$/src/main/java/screen/AT2BOOSU1004/AT2BOOSU1004Test.java" />
     </list>
@@ -66,11 +64,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AT2BOOSU1004Test.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AT2BOOSU1004Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/screen/AT2BOOSU1004/AT2BOOSU1004Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+            <state relative-caret-position="392">
+              <caret line="519" column="5" selection-start-line="519" selection-start-column="5" selection-end-line="519" selection-end-column="5" />
               <folding>
                 <element signature="docComment;class#AT2BOOSU1004Test#0" expanded="false" />
                 <element signature="method#AT2BOOSU1004Test#0;class#AT2BOOSU1004Test#0" expanded="false" />
@@ -90,7 +88,7 @@
                 <element signature="method#Delete_configuration_by_clients#0;class#AT2BOOSU1004Test#0" expanded="false" />
                 <element signature="method#Other_actions_configuration_by_clients#0;class#AT2BOOSU1004Test#0" expanded="false" />
                 <element signature="method#Edit_configuration_by_clients#0;class#AT2BOOSU1004Test#0" expanded="false" />
-                <element signature="e#31215#31225#0" expanded="false" />
+                <element signature="e#31213#31223#0" expanded="false" />
                 <element signature="method#Search_configuration_by_clients#0;class#AT2BOOSU1004Test#0" expanded="false" />
                 <element signature="method#Add_configuration_by_clients#0;class#AT2BOOSU1004Test#0" expanded="false" />
                 <element signature="method#Delete_configuration_by_tto#0;class#AT2BOOSU1004Test#0" expanded="false" />
@@ -104,23 +102,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AT2BOOSU1004Sis.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AT2BOOSU1004Sis.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/screen/AT2BOOSU1004/AT2BOOSU1004Sis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5338">
-              <caret line="1896" column="46" selection-start-line="1896" selection-start-column="46" selection-end-line="1896" selection-end-column="46" />
+            <state relative-caret-position="-2107">
+              <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="false" />
                 <element signature="docComment;class#AT2BOOSU1004Sis#0" expanded="false" />
                 <element signature="method#AT2BOOSU1004Sis#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-                <element signature="e#657#658#0" expanded="false" />
-                <element signature="e#688#689#0" expanded="false" />
-                <element signature="e#750#751#0" expanded="false" />
-                <element signature="e#790#791#0" expanded="false" />
-                <element signature="e#831#832#0" expanded="false" />
-                <element signature="e#858#859#0" expanded="false" />
-                <element signature="e#908#909#0" expanded="false" />
-                <element signature="e#940#941#0" expanded="false" />
                 <element signature="method#start#0;class#AT2BOOSU1004Sis#0" expanded="false" />
                 <element signature="method#setScreenInfo#0;class#AT2BOOSU1004Sis#0" expanded="false" />
                 <element signature="method#getElements#0;class#AT2BOOSU1004Sis#0" expanded="false" />
@@ -137,11 +126,12 @@
                 <element signature="method#Delete_configuration_by_clients#0;class#AT2BOOSU1004Sis#0" expanded="false" />
                 <element signature="method#Other_actions_configuration_by_clients#0;class#AT2BOOSU1004Sis#0" expanded="false" />
                 <element signature="method#Edit_configuration_by_clients#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-                <element signature="e#39579#39589#0" expanded="false" />
+                <element signature="e#39570#39580#0" expanded="false" />
                 <element signature="method#Search_configuration_by_clients#0;class#AT2BOOSU1004Sis#0" expanded="false" />
                 <element signature="method#Add_configuration_by_clients#0;class#AT2BOOSU1004Sis#0" expanded="false" />
                 <element signature="method#Delete_configuration_by_tto#0;class#AT2BOOSU1004Sis#0" expanded="false" />
                 <element signature="method#Other_actions_configuration_by_tto#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+                <element signature="method#Search_edit_configuration_by_tto#0;class#AT2BOOSU1004Sis#0" expanded="false" />
                 <element signature="method#Edit_configuration_by_tto#0;class#AT2BOOSU1004Sis#0" expanded="false" />
                 <element signature="method#Search_configuratons_by_tto#0;class#AT2BOOSU1004Sis#0" expanded="false" />
                 <element signature="method#Add_cofiguration_by_tto#0;class#AT2BOOSU1004Sis#0" expanded="false" />
@@ -347,9 +337,9 @@
         <option value="$PROJECT_DIR$/src/main/java/screen/AT2BOOSA1005/AT2BOOSA1005Sis.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/CommonActions/Functions.java" />
         <option value="$PROJECT_DIR$/src/main/java/screen/AT2BOOSA0001/AT2BOOSA0001Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/screen/AT2BOOSU1004/AT2BOOSU1004Sis.java" />
         <option value="$PROJECT_DIR$/src/main/java/screen/AT2BOOSU1004/AT2BOOSU1004Locators.java" />
         <option value="$PROJECT_DIR$/src/main/java/screen/AT2BOOSU1004/AT2BOOSU1004Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/screen/AT2BOOSU1004/AT2BOOSU1004Sis.java" />
       </list>
     </option>
   </component>
@@ -910,13 +900,6 @@
       <option name="presentableId" value="Default" />
       <updated>1454668829543</updated>
     </task>
-    <task id="LOCAL-00102" summary="Corrección codigo de la ACCOP0005 para que use en el historico los valores de la edicion">
-      <created>1478175908103</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1478175908103</updated>
-    </task>
     <task id="LOCAL-00103" summary="    quitar espacios innecesarios de la actsu0037Test&#10;">
       <created>1478179504310</created>
       <option name="number" value="00103" />
@@ -1253,7 +1236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1484033873828</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="Actualización AT2BOOSU1004">
+      <created>1484124446994</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1484124446994</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1361,7 +1351,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Actualización AT2ACCSU0006&#10;&#10;" />
     <MESSAGE value="Actualización AT2ACCSU0010&#10;&#10;" />
     <MESSAGE value="Actualización AT2MDMOR0012&#10;&#10;" />
     <MESSAGE value="Actualización AT2ACCSU0027&#10;&#10;" />
@@ -1386,7 +1375,8 @@
     <MESSAGE value="quitado espera en el simple click&#10;" />
     <MESSAGE value="corrección del log out de sis&#10;" />
     <MESSAGE value="Actualización código" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actualización código" />
+    <MESSAGE value="Actualización AT2BOOSU1004" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualización AT2BOOSU1004" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1441,7 +1431,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/screen/AT2BOOSU1004/AT2BOOSU1004Test.java</url>
-          <line>1323</line>
+          <line>1321</line>
           <properties />
           <option name="timeStamp" value="833" />
         </line-breakpoint>
@@ -1753,7 +1743,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/screen/AT2BOOSU1004/AT2BOOSU1004Test.java</url>
-          <line>526</line>
+          <line>524</line>
           <properties />
           <option name="timeStamp" value="1098" />
         </line-breakpoint>
@@ -1765,7 +1755,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/screen/AT2BOOSU1004/AT2BOOSU1004Test.java</url>
-          <line>1519</line>
+          <line>1517</line>
           <properties />
           <option name="timeStamp" value="1117" />
         </line-breakpoint>
@@ -2316,50 +2306,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/screen/AT2BOOSU1004/AT2BOOSU1004Sis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5338">
-          <caret line="1896" column="46" selection-start-line="1896" selection-start-column="46" selection-end-line="1896" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="method#AT2BOOSU1004Sis#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="e#657#658#0" expanded="false" />
-            <element signature="e#688#689#0" expanded="false" />
-            <element signature="e#750#751#0" expanded="false" />
-            <element signature="e#790#791#0" expanded="false" />
-            <element signature="e#831#832#0" expanded="false" />
-            <element signature="e#858#859#0" expanded="false" />
-            <element signature="e#908#909#0" expanded="false" />
-            <element signature="e#940#941#0" expanded="false" />
-            <element signature="method#start#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="method#setScreenInfo#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="method#getElements#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="method#getData#1;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="method#testCSED#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="method#Suplier_hotel_exclusions#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="method#Delete_supler_hotel_exclusions#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="method#Other_actions_suplier_hotel_exclusions#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="method#Edit_suplier_hotel_exclusions#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="method#Search_suplier_hotel_exclusions#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="method#Add_suplier_hotel_exclusions#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="method#Go_to_suplier_hotel_exclusions#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="method#Reconfirmation_clients#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="method#Delete_configuration_by_clients#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="method#Other_actions_configuration_by_clients#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="method#Edit_configuration_by_clients#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="e#39579#39589#0" expanded="false" />
-            <element signature="method#Search_configuration_by_clients#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="method#Add_configuration_by_clients#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="method#Delete_configuration_by_tto#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="method#Other_actions_configuration_by_tto#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="method#Edit_configuration_by_tto#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="method#Search_configuratons_by_tto#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-            <element signature="method#Add_cofiguration_by_tto#0;class#AT2BOOSU1004Sis#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/screen/AT2BOOSU1004/AT2BOOSU1004Locators.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -2370,8 +2316,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/screen/AT2BOOSU1004/AT2BOOSU1004Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+        <state relative-caret-position="392">
+          <caret line="519" column="5" selection-start-line="519" selection-start-column="5" selection-end-line="519" selection-end-column="5" />
           <folding>
             <element signature="docComment;class#AT2BOOSU1004Test#0" expanded="false" />
             <element signature="method#AT2BOOSU1004Test#0;class#AT2BOOSU1004Test#0" expanded="false" />
@@ -2391,7 +2337,7 @@
             <element signature="method#Delete_configuration_by_clients#0;class#AT2BOOSU1004Test#0" expanded="false" />
             <element signature="method#Other_actions_configuration_by_clients#0;class#AT2BOOSU1004Test#0" expanded="false" />
             <element signature="method#Edit_configuration_by_clients#0;class#AT2BOOSU1004Test#0" expanded="false" />
-            <element signature="e#31215#31225#0" expanded="false" />
+            <element signature="e#31213#31223#0" expanded="false" />
             <element signature="method#Search_configuration_by_clients#0;class#AT2BOOSU1004Test#0" expanded="false" />
             <element signature="method#Add_configuration_by_clients#0;class#AT2BOOSU1004Test#0" expanded="false" />
             <element signature="method#Delete_configuration_by_tto#0;class#AT2BOOSU1004Test#0" expanded="false" />
@@ -2400,6 +2346,42 @@
             <element signature="method#Edit_configuration_by_tto#0;class#AT2BOOSU1004Test#0" expanded="false" />
             <element signature="method#Search_configuratons_by_tto#0;class#AT2BOOSU1004Test#0" expanded="false" />
             <element signature="method#Add_cofiguration_by_tto#0;class#AT2BOOSU1004Test#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/screen/AT2BOOSU1004/AT2BOOSU1004Sis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2107">
+          <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+          <folding>
+            <element signature="docComment;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#AT2BOOSU1004Sis#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#start#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#setScreenInfo#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#getElements#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#getData#1;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#testCSED#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#Suplier_hotel_exclusions#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#Delete_supler_hotel_exclusions#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#Other_actions_suplier_hotel_exclusions#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#Edit_suplier_hotel_exclusions#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#Search_suplier_hotel_exclusions#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#Add_suplier_hotel_exclusions#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#Go_to_suplier_hotel_exclusions#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#Reconfirmation_clients#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#Delete_configuration_by_clients#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#Other_actions_configuration_by_clients#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#Edit_configuration_by_clients#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="e#39570#39580#0" expanded="false" />
+            <element signature="method#Search_configuration_by_clients#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#Add_configuration_by_clients#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#Delete_configuration_by_tto#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#Other_actions_configuration_by_tto#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#Search_edit_configuration_by_tto#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#Edit_configuration_by_tto#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#Search_configuratons_by_tto#0;class#AT2BOOSU1004Sis#0" expanded="false" />
+            <element signature="method#Add_cofiguration_by_tto#0;class#AT2BOOSU1004Sis#0" expanded="false" />
           </folding>
         </state>
       </provider>
