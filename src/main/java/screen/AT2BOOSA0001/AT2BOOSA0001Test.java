@@ -367,7 +367,6 @@ public class AT2BOOSA0001Test {
         String where = " on SEARCH BY QUERY BY EXAPLE";
         driver.getReport().addHeader("SEARCH BY QUERY BY EXAPLE IN SEARCH BOOKING",3,false);
 
-
         if(!Functions.clickQbE(driver,
                 new String[]{"query_b_qbe",getElements("query_b_qbe")},// query button
                 new String[]{"query_i_booking_reference",getElements("query_i_booking_reference")},//any query input
