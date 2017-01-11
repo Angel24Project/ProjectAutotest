@@ -1920,7 +1920,7 @@ class AT2BOOSA1002Test {
                     " on BOOSA1002 Hotel")) {
                 return false;
             }
-            // ToDo aqui hay bug de PL con niños que ya arreglarrán según Miguel Angel Martín Villalvilla
+            // ToDo aqui hay bug de PLSql con niños que ya arreglarrán según Miguel Angel Martín Villalvilla
         } else if (Functions.displayed(driver, getElements("hotel_b_save_b_book"))) {
             if (!Functions.checkClick(driver,
                     new String[]{"hotel_b_save_b_book", getElements("hotel_b_save_b_book")}, //element to click
