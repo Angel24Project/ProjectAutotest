@@ -75,7 +75,7 @@ class AT2BOOSA1002Test {
         if (!hotel(driver)) {
             return false;
         }
-        //ToDo a partir de aqui no se ha revisado el codigo ni comprobado
+        //ToDo a partir de aqui
         if (!transfers(driver)) {
             return false;
         }
@@ -1841,23 +1841,22 @@ class AT2BOOSA1002Test {
                     " on BOOSA1002 Hotel")) {
                 return false;
             }
-            if (!Functions.createLov(driver,
+            if (!Functions.createLovByValue(driver,
                     new String[]{"hotel_e_result_lov_room", getElements("hotel_e_result_lov_room")}, //LoV button
-                    new String[]{"hotel_e_result_i_room", getElements("hotel_e_result_i_room")}, //external LoV input
-                    recursiveXPaths.lov_b_search, // lov b search
+                    new String[]{"hotel_e_result_lov_room_i_room_code", getElements("hotel_e_result_lov_room_i_room_code")},
                     recursiveXPaths.lov_e_result, // lov result
-                    recursiveXPaths.lov_b_ok, //lov b ok
+                    getData("room_name"),
                     "room_name", //name of the data
                     " on BOOSA1002 Hotel")) {
                 return false;
             }
             Functions.break_time(driver, 30, 500);
-            if (!Functions.createLov(driver,
+            if (!Functions.createLovByValue(driver,
                     new String[]{"hotel_e_result_lov_char", getElements("hotel_e_result_lov_char")}, //LoV button
                     new String[]{"hotel_e_result_i_char", getElements("hotel_e_result_i_char")}, //external LoV input
-                    recursiveXPaths.lov_b_search, // lov b search
+                    new String[]{"hotel_e_result_lov_char_i_code", getElements("hotel_e_result_lov_char_i_code")},
                     recursiveXPaths.lov_e_result, // lov result
-                    recursiveXPaths.lov_b_ok, //lov b ok
+                    getData("char_name"),
                     "char_name", //name of the data
                     " on BOOSA1002 Hotel")) {
                 return false;
@@ -1868,12 +1867,12 @@ class AT2BOOSA1002Test {
                     " on BOOSA1002 Hotel")) {
                 return false;
             }
-            if (!Functions.createLov(driver,
+            if (!Functions.createLovByValue(driver,
                     new String[]{"hotel_e_result_lov_board", getElements("hotel_e_result_lov_board")}, //LoV button
                     new String[]{"hotel_e_result_i_board", getElements("hotel_e_result_i_board")}, //external LoV input
-                    recursiveXPaths.lov_b_search, // lov b search
+                    new String[]{"hotel_e_result_lov_board_i_code", getElements("hotel_e_result_lov_board_i_code")},
                     recursiveXPaths.lov_e_result, // lov result
-                    recursiveXPaths.lov_b_ok, //lov b ok
+                    getData("board_hotel"),
                     "board_name", //name of the data
                     " on BOOSA1002 Hotel")) {
                 return false;
@@ -1898,30 +1897,49 @@ class AT2BOOSA1002Test {
             }
         }
         Functions.break_time(driver, 30, 500);
-        if (!Functions.checkClick(driver,
-                new String[]{"hotel_b_save", getElements("hotel_b_save")}, //element to click
-                new String[]{"hotel_b_save_b_save", getElements("hotel_b_save_b_save")}, //expected element to appear
-                " on BOOSA1002 Hotel")) {
-            return false;
-        }
-        if (!Functions.checkClick(driver,
-                new String[]{"hotel_b_save_b_actions", getElements("hotel_b_save_b_actions")}, //element to click
-                new String[]{"hotel_b_save_b_actions_auto", getElements("hotel_b_save_b_actions_auto")}, //expected element to appear
-                " on BOOSA1002 Hotel")) {
-            return false;
-        }
         if (!Functions.simpleClick(driver,
-                new String[]{"hotel_b_save_b_actions_auto", getElements("hotel_b_save_b_actions_auto")}, //element to click
+                new String[]{"hotel_b_save", getElements("hotel_b_save")}, //element to click
                 " on BOOSA1002 Hotel")) {
             return false;
         }
-        if (!Functions.checkClickByAbsence(driver,
-                new String[]{"hotel_b_save_b_save", getElements("hotel_b_save_b_save")}, //element to click
-                new String[]{"hotel_b_save_b_save", getElements("hotel_b_save_b_save")}, //expected element to disappear
-                " on BOOSA1002 Hotel")) {
-            return false;
+        if (Functions.displayed(driver, getElements("hotel_b_save_b_actions"))) {
+            if (!Functions.checkClick(driver,
+                    new String[]{"hotel_b_save_b_actions", getElements("hotel_b_save_b_actions")}, //element to click
+                    new String[]{"hotel_b_save_b_actions_auto", getElements("hotel_b_save_b_actions_auto")}, //expected element to appear
+                    " on BOOSA1002 Hotel")) {
+                return false;
+            }
+            if (!Functions.simpleClick(driver,
+                    new String[]{"hotel_b_save_b_actions_auto", getElements("hotel_b_save_b_actions_auto")}, //element to click
+                    " on BOOSA1002 Hotel")) {
+                return false;
+            }
+            if (!Functions.checkClickByAbsence(driver,
+                    new String[]{"hotel_b_save_b_save", getElements("hotel_b_save_b_save")}, //element to click
+                    new String[]{"hotel_b_save_b_save", getElements("hotel_b_save_b_save")}, //expected element to disappear
+                    " on BOOSA1002 Hotel")) {
+                return false;
+            }
+            // ToDo aqui hay bug de PL con niños que ya arreglarrán según Miguel Angel Martín Villalvilla
+        } else if (Functions.displayed(driver, getElements("hotel_b_save_b_book"))) {
+            if (!Functions.checkClick(driver,
+                    new String[]{"hotel_b_save_b_book", getElements("hotel_b_save_b_book")}, //element to click
+                    new String[]{"hotel_b_save_b_book_i_autor", getElements("hotel_b_save_b_book_i_autor")}, //expected element to appear
+                    " on BOOSA1002 Hotel")) {
+                return false;
+            }
+            if (!Functions.insertInput(driver, new String[]{"hotel_b_save_b_book_i_autor", getElements("hotel_b_save_b_book_i_autor")},
+                    "authoricer", getData("authoricer"), " on BOOSA1002 Hotel")) {
+                return false;
+            }
+            if (!Functions.checkClickByAbsence(driver,
+                    new String[]{"hotel_b_save_b_book_b_ok", getElements("hotel_b_save_b_book_b_ok")}, //element to click
+                    new String[]{"hotel_b_save_b_book_b_ok", getElements("hotel_b_save_b_book_b_ok")}, //expected element to disappear
+                    " on BOOSA1002 Hotel")) {
+                return false;
+            }
         }
-        // ToDo aqui hay bug de PL que ya arreglarrán según Miguel Angel Martín Villalvilla
+
         return true;
     }
 
