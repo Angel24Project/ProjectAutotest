@@ -286,7 +286,7 @@ public class Functions {
         if (!checkClick(driver, b_search, e_result, where)) {
             return false;
         }
-        break_time(driver, 30, 500);
+        break_time(driver, 250, 500);
         if (!simpleClick(driver, e_result, where)) {
             return false;
         }

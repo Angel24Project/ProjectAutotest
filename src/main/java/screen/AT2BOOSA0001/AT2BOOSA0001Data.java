@@ -29,6 +29,6 @@ public class AT2BOOSA0001Data {
     }
 
     public void setDefaultData (){
-
+        data.put("import_bookings", "C:\\ProjectAutotest\\src\\main\\resources\\ImportBookings.xlsx");
     }
 }

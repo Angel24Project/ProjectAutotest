@@ -71,9 +71,6 @@ public class AT2ACCDI0028Test {
         return false;
     }
 
-
-
-
     /*EXCLUSIONS MAINTENANCE TAB SI*/
     private boolean Exclusions_maintenance_si (TestDriver driver){
 
